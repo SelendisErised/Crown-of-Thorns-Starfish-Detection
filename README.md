@@ -6,7 +6,7 @@ Our task is to identify locations (bounding box) of COTS from underwater images 
 
 You could find the dataset we used at https://www.kaggle.com/competitions/tensorflow-great-barrier-reef/data.
 
-![](image/COTS.png)
+![](Image/COTS.png)
 
 ## Main Scripts
 **Note: This project is mainly finished on Google Colab. Run the notebook in the following order to reproduce the result.**

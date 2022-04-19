@@ -19,7 +19,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
 3. Code/COTS_yolov5s6_train.ipynb
 
-  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.5 hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5s6.
+  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process for 15 epochs will last for about 7.5 hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5s6.
 
 4. Code/COTS_yolov5m6_train.ipynb
 

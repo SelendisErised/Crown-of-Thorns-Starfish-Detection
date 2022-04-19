@@ -27,3 +27,6 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
 ## Trained model & Results
 The trained model and result are stored under /Model, including all the output file. The model is in yolo format, i.e., model_name.pt.
+
+## Ensemble
+We use ensemble methods to upgrade our model performances.

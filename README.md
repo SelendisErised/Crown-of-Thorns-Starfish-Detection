@@ -11,19 +11,19 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
 1. Code/COTS_download.ipynb
 
-  Help to download the *Help Protect the Great Barrier Reef* dataset using Kaggle API to your own google drive under  'content/drive/MyDrive/Protect_Reef'.
+  Help to download the *Help Protect the Great Barrier Reef* dataset using Kaggle API to your own google drive under  /content/drive/MyDrive/Protect_Reef.
 
 2. Code/COTS_previsulization.ipynb
 
-  Help to visulize the basic information about experimented data. Prepare the training and validation data. Change the label to YOLO format. The images and labels are stored under  'content/drive/MyDrive/Protect_Reef_Process'.
+  Help to visulize the basic information about experimented data. Prepare the training and validation data. Change the label to YOLO format. The images and labels are stored under  /content/drive/MyDrive/Protect_Reef_Process.
 
 3. Code/COTS_yolov5s6_train.ipynb
 
-  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.5 hr. The trained model will be stored under 'content/drive/MyDrive/Protect_Reef_Process/yolov5s6'.
+  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.5 hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5s6.
 
 4. Code/COTS_yolov5m6_train.ipynb
 
-  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.5 hr. The trained model will be stored under 'content/drive/MyDrive/Protect_Reef_Process/yolov5m6'.
+  Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.5 hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5m6.
 
 ## Trained model & Results
-The trained model and result are stored under /model, including all the output file. The model is in yolo format, i.e., model_name.pt.
+The trained model and result are stored under /Model, including all the output file. The model is in yolo format, i.e., model_name.pt.

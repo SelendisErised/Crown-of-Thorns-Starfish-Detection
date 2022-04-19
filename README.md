@@ -28,7 +28,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
   Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about ??? hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5m6.
 
 ## Trained models & Results
-The trained model and result are stored under /Model, including all the output file. The model is in yolo format, i.e., model_name.pt. All the models are trained on a resolution of 1152x2048 and only using images with boxes. For augmentations, we employ a mix of flips, scales, HSV, mosaic, etc. For validation, we use group k fold (k=3), that is to say, the same group will not appear in two different folds.
+The trained model and result are stored under /Model, including all the output file. The model is in yolo format, i.e., model_name.pt. All the models are trained on a resolution of 1152x2048 and only using images with boxes. For augmentations, we employ a mix of flips, scales, HSV, mosaic, etc. For validation, we use group k fold (k=3), that is to say, the same group will not appear in two different folds. The overall architecture is designed based on [YOLOv5](https://github.com/ultralytics/yolov5). We trained yolov5s6 and yolov5m6 for different epochs. Due to the runtime limitations of colab, we cannot trained more complex models like yolov5l6, which may have better performance. In this case, we will use ensemble methods to optimize our model.
 
 ## Ensemble
-We use ensemble methods to upgrade our model performances.
+We use ensemble methods to upgrade our model performances. 

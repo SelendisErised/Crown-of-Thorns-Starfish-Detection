@@ -9,7 +9,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 ![](Image/COTS.png)
 
 ## Main Scripts
-**Note: This project is mainly finished on Google Colab. Run the notebook in the following order to reproduce the result.**
+**Note: This project is mainly trained on Google Colab. Run the notebook in the following order to reproduce the result.**
 
 1. Code/COTS_download.ipynb
 

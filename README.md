@@ -27,7 +27,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about ??? hr. The trained model will be stored under /content/drive/MyDrive/Protect_Reef_Process/yolov5m6.
  
-5. Code/COTS_yolov5_validation.ipynb
+5. Code/COTS_yolov5_validation.ipynb (optional)
 
   Help to output the validation results for the former training process. The validation result should be shown after training normally. Just in case we met some errors like exceeded GPU memory. This notebook could also be used to check the validation result for the ensembling models.
 

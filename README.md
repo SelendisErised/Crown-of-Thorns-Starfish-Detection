@@ -9,7 +9,6 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 ![](Image/COTS.png)
 
 ## Main Scripts
-**Note: This project is mainly trained on Google Colab. Run the notebook in the following order to reproduce the result.**
 
 1. [COTS_download.ipynb](Code/COTS_download.ipynb)
 
@@ -35,13 +34,18 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Use Weighted Box Fusion (WBF) to ensemble the trained yolov5s6 and yolov5n6 model. Evaluate the performace of the ensembling model on the hidden test set through Kaggle API.
 
+**Note: This project is mainly trained on Google Colab. Run the script 1-5 in the above order to retrain the model. Model ensembling and model evaluation (script 5) was finished in Kaggle Notebook environment.**
+
 ## Trained models & Metrics
+
 The trained model and result are stored under /Model, including all the output file. The model is in pytorch format, i.e., model_name.pt. All the models are trained on a resolution of 1280 x 720 and only using images with boxes. For augmentations, we employ a mix of flips, scales, HSV, mosaic, etc. For validation, we use group k fold (k=3), that is to say, the same group will not appear in two different folds. The overall architecture is designed based on [YOLOv5](https://github.com/ultralytics/yolov5). We trained yolov5s6 and yolov5n6 for different epochs. Due to the runtime limitations of colab, we cannot trained more complex models like yolov5l6, which may have better performance. In this case, we use ensemble methods to optimize our model. 
 
 ## Ensemble
+
 We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used. Here, we use a state of art method for combining predictions of object detection models: [Weighted Box Fusion (WBF)](https://arxiv.org/abs/1910.13302). Unlike NMS and soft-NMS methods that simply remove part of the predictions, the weighted box fusion (WBF) method, introduced by Roman Solovyev et al. in 2019, uses confidence scores of all proposed bounding boxes to construct the average boxes.
 
 ## Reference
+
 1. Kaggle: TensorFlow - Help Protect the Great Barrier Reef,  https://www.kaggle.com/competitions/tensorflow-great-barrier-reef.
 2. Solovyev, Roman, Weimin Wang, and Tatiana Gabruseva. "Weighted boxes fusion: Ensembling boxes from different object detection models." Image and Vision Computing 107 (2021): 104117. https://arxiv.org/abs/1910.13302
 3. Weighted Box Fusion, https://github.com/ZFTurbo/Weighted-Boxes-Fusion

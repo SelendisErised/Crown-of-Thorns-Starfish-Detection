@@ -27,12 +27,16 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Use yolov5n6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process will last for about 7.72 hr. The trained model will be stored under `/content/drive/MyDrive/Protect_Reef_Process/yolov5n6`.
  
-5. [COTS_yolov5_validation.ipynb](COTS_yolov5_validation.ipynb)
+5. [COTS_yolov5_validation.ipynb](Code/COTS_yolov5_validation.ipynb)
 
   Help to output the validation results for the former training process. The validation result should be shown after training normally. Just in case we met some errors like exceeded GPU memory. This notebook could also be used to check the validation result for the ensembling models.
 
-## Trained models & Results
+6. [yolov5-s6-n6-ensemble.ipynb](Code/yolov5-s6-n6-ensemble.ipynb)
+
+  Use Weighted Box Fusion (WBF) to ensemble the trained yolov5s6 and yolov5n6 model. Evaluate the performace of the ensembling model on the hidden test set through Kaggle API.
+
+## Trained models & metrics
 The trained model and result are stored under /Model, including all the output file. The model is in pytorch format, i.e., model_name.pt. All the models are trained on a resolution of 1280 x 720 and only using images with boxes. For augmentations, we employ a mix of flips, scales, HSV, mosaic, etc. For validation, we use group k fold (k=3), that is to say, the same group will not appear in two different folds. The overall architecture is designed based on [YOLOv5](https://github.com/ultralytics/yolov5). We trained yolov5s6 and yolov5n6 for different epochs. Due to the runtime limitations of colab, we cannot trained more complex models like yolov5l6, which may have better performance. In this case, we use ensemble methods to optimize our model. 
 
 ## Ensemble
-We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used.
+We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used. Here, we use a state of art method for combining predictions of object detection models: [Weighted Box Fusion (WBF)](https://arxiv.org/abs/1910.13302).

@@ -44,6 +44,14 @@ The trained model and result are stored under /Model, including all the output f
 
 We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used. Here, we use a state of art method for combining predictions of object detection models: [Weighted Box Fusion (WBF)](https://arxiv.org/abs/1910.13302). Unlike NMS and soft-NMS methods that simply remove part of the predictions, the weighted box fusion (WBF) method, introduced by Roman Solovyev et al. in 2019, uses confidence scores of all proposed bounding boxes to construct the average boxes.
 
+## Test Submission Result
+
+| Model      | Private Score | Public Score  |
+|    :-----:    |    :----:   |    :---: |
+| yolov5n6      | 0.310       | 0.348   |
+| yolov5s6   | 0.330        | 0.457      |
+| WBF (n6 & s6)   | 0.424        | 0.358      |
+
 ## Reference
 
 1. Kaggle: TensorFlow - Help Protect the Great Barrier Reef,  https://www.kaggle.com/competitions/tensorflow-great-barrier-reef.

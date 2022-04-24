@@ -35,7 +35,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Use Weighted Box Fusion (WBF) to ensemble the trained yolov5s6 and yolov5n6 model. Evaluate the performace of the ensembling model on the hidden test set through Kaggle API.
 
-## Trained models & metrics
+## Trained models & Metrics
 The trained model and result are stored under /Model, including all the output file. The model is in pytorch format, i.e., model_name.pt. All the models are trained on a resolution of 1280 x 720 and only using images with boxes. For augmentations, we employ a mix of flips, scales, HSV, mosaic, etc. For validation, we use group k fold (k=3), that is to say, the same group will not appear in two different folds. The overall architecture is designed based on [YOLOv5](https://github.com/ultralytics/yolov5). We trained yolov5s6 and yolov5n6 for different epochs. Due to the runtime limitations of colab, we cannot trained more complex models like yolov5l6, which may have better performance. In this case, we use ensemble methods to optimize our model. 
 
 ## Ensemble

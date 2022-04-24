@@ -11,15 +11,15 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 ## Main Scripts
 **Note: This project is mainly trained on Google Colab. Run the notebook in the following order to reproduce the result.**
 
-1. [Code/COTS_download.ipynb](Code/COTS_download.ipynb)
+1. [COTS_download.ipynb](Code/COTS_download.ipynb)
 
   Help to download the *Help Protect the Great Barrier Reef* dataset using Kaggle API to your own google drive under  `/content/drive/MyDrive/Protect_Reef`.
 
-2. [Code/COTS_previsulization.ipynb](Code/COTS_previsulization.ipynb)
+2. [COTS_cleaning_and_sampling_merged.ipynb](Code/COTS_cleaning_and_sampling_merged.ipynb)
 
-  Help to visulize the basic information about experimented data. Prepare the training and validation data. Change the label to YOLO format. The images and labels are stored under  `/content/drive/MyDrive/Protect_Reef_Process`.
+  Help to visulize and analyze the basic informations about experimented data. Perform data cleaning and sampling. Prepare the training and validation data. Change the label to YOLO format. The images and labels are stored under  `/content/drive/MyDrive/Protect_Reef_Process`.
 
-3. [Code/COTS_yolov5s6_train.ipynb](Code/COTS_yolov5s6_train.ipynb)
+3. [COTS_yolov5s6_train.ipynb](Code/COTS_yolov5s6_train.ipynb)
 
   Use yolov5s6 to train the model and report the validation results. This file includes all the megadata and augmentations configuration. The training process for 15 epochs will last for about 7.5 hr. The trained model will be stored under `/content/drive/MyDrive/Protect_Reef_Process/yolov5s6`.
 

@@ -47,6 +47,7 @@ We use ensemble methods to upgrade our model performances. As long as the base m
 ## Reference
 
 1. Kaggle: TensorFlow - Help Protect the Great Barrier Reef,  https://www.kaggle.com/competitions/tensorflow-great-barrier-reef.
-2. Solovyev, Roman, Weimin Wang, and Tatiana Gabruseva. "Weighted boxes fusion: Ensembling boxes from different object detection models." Image and Vision Computing 107 (2021): 104117. https://arxiv.org/abs/1910.13302
-3. Weighted Box Fusion, https://github.com/ZFTurbo/Weighted-Boxes-Fusion
-4. BBOX Helper, https://github.com/awsaf49/bbox
+2. Ultralytics, YOLOv5 🚀 in PyTorch, https://github.com/ultralytics/yolov5
+3. Solovyev, Roman, Weimin Wang, and Tatiana Gabruseva. "Weighted boxes fusion: Ensembling boxes from different object detection models." Image and Vision Computing 107 (2021): 104117. https://arxiv.org/abs/1910.13302
+4. Weighted Box Fusion, https://github.com/ZFTurbo/Weighted-Boxes-Fusion
+5. BBOX Helper, https://github.com/awsaf49/bbox

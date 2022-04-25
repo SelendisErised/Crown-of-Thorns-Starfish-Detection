@@ -48,6 +48,10 @@ The trained model and result are stored under /Model, including all the output f
 
 We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used. Here, we use a state of art method for combining predictions of object detection models: [Weighted Box Fusion (WBF)](https://arxiv.org/abs/1910.13302). Unlike NMS and soft-NMS methods that simply remove part of the predictions, the weighted box fusion (WBF) method, introduced by Roman Solovyev et al. in 2019, uses confidence scores of all proposed bounding boxes to construct the average boxes.
 
+## Object Tracking
+
+For a video-based object detection task, it is reasonable to believe applying the object tracking method after the object detection model could improve the overall performance. Here, we choose [Norfair Library](https://github.com/tryolabs/norfair) to perform object tracking as the final stage of our pipeline. Norfair can estimate each point's future position based on its past position. Then it tries to match these estimated positions with the newly detected positions provided by the detector. To achieve this matching, Norfair can rely on any distance function specified by the user. For simplicity, we will calculate the Euclidean distance between the tracked object and the detected object. So if we detect a box at frame t, we will estimate another box based on its trajectory at frame t+1 and more later frames.
+
 ## Test Results (Competition Submission Score)
 
 | Model      | Private Score | Public Score  |
@@ -66,4 +70,5 @@ Note: The model were not trained to improve performance on test as this would in
 2. Ultralytics, YOLOv5 🚀 in PyTorch, https://github.com/ultralytics/yolov5
 3. Solovyev, Roman, Weimin Wang, and Tatiana Gabruseva. "Weighted boxes fusion: Ensembling boxes from different object detection models." Image and Vision Computing 107 (2021): 104117. https://arxiv.org/abs/1910.13302
 4. Weighted Box Fusion, https://github.com/ZFTurbo/Weighted-Boxes-Fusion
-5. BBOX Helper, https://github.com/awsaf49/bbox
+5. Tryolabs, Norfair, https://github.com/tryolabs/norfair
+6. BBOX Helper, https://github.com/awsaf49/bbox

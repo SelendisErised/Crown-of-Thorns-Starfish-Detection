@@ -48,13 +48,17 @@ The trained model and result are stored under /Model, including all the output f
 
 We use ensemble methods to upgrade our model performances. As long as the base models are diverse and independent, the prediction error decreases when the ensemble approach is used. Here, we use a state of art method for combining predictions of object detection models: [Weighted Box Fusion (WBF)](https://arxiv.org/abs/1910.13302). Unlike NMS and soft-NMS methods that simply remove part of the predictions, the weighted box fusion (WBF) method, introduced by Roman Solovyev et al. in 2019, uses confidence scores of all proposed bounding boxes to construct the average boxes.
 
-## Test Result (Competition Submission Score)
+## Test Results (Competition Submission Score)
 
 | Model      | Private Score | Public Score  |
 |    :-----:    |    :----:   |    :---: |
 | yolov5n6      | 0.310       | 0.348   |
 | yolov5s6   | 0.330        | 0.457      |
 | WBF (n6 & s6)   | 0.424        | 0.358      |
+
+The public score is the results from 25% of the testing image set. The private score is from 75% of the test set and is used to determine the final performance of the model. WBF model has the highest F2 score on the test set and can be considered a better model compared to s6 and n6.
+
+Note: The model were not trained to improve performance on test as this would introduce bias. The Kaggle competition allows us to submit four models from which the one with best private score is considered our final submission
 
 ## Reference
 

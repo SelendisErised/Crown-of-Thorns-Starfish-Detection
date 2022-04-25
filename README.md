@@ -59,6 +59,7 @@ For a video-based object detection task, it is reasonable to believe applying th
 | yolov5n6      | 0.310       | 0.348   |
 | yolov5s6   | 0.330        | 0.457      |
 | WBF (n6 & s6)   | 0.424        | 0.358      |
+| Tracking   | 0.421        | 0.351      |
 
 The public score is the results from 25% of the testing image set. The private score is from 75% of the test set and is used to determine the final performance of the model. WBF model has the highest F2 score on the test set and can be considered a better model compared to s6 and n6.
 

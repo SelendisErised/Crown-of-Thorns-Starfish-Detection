@@ -38,7 +38,7 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Adds object tracking with Norfair to the prior ensemble model. Evaluates performance on the hidden test set via the Kaggle API.
 
-**Note: This project is mainly trained on Google Colab. Run the script 1-5 in the above order to retrain the model. Model ensembling and model evaluation (script 5) was finished in Kaggle Notebook environment. Please put the trained models to the corresponding paths to reproduce the results.**
+**Note: This project is mainly trained on Google Colab. Run the script 1-5 in the above order to retrain the model. Model ensembling, tracking, and model evaluation (script 6-7) was finished in Kaggle Notebook environment. Please put the trained models to the corresponding paths to reproduce the results.**
 
 ## Trained models & Metrics
 

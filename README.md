@@ -34,6 +34,10 @@ You could find the dataset we used at https://www.kaggle.com/competitions/tensor
 
   Use Weighted Box Fusion (WBF) to ensemble the trained yolov5s6 and yolov5n6 model. Evaluate the performace of the ensembling model on the hidden test set through Kaggle API.
 
+7. [yolov5-s6-n6-ensemble-tracking.ipynb](Code/yolov5-s6-n6-ensemble-tracking.ipynb)
+
+  Adds object tracking with Norfair to the prior ensemble model. Evaluates performance on the hidden test set via the Kaggle API.
+
 **Note: This project is mainly trained on Google Colab. Run the script 1-5 in the above order to retrain the model. Model ensembling and model evaluation (script 5) was finished in Kaggle Notebook environment. Please put the trained models to the corresponding paths to reproduce the results.**
 
 ## Trained models & Metrics

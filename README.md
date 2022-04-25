@@ -1,6 +1,6 @@
 # COTS Detection on the Great Barrier Reef
 ## Project Overview
-The world’s largest coral reef, the Great Barrier Reef is home to around 400 species of corals. The reef is now under threat because of the overpopulation of a specific species of starfish called crown-of-thorns (COTS), which are destroying many of the native corals.
+The world’s largest coral reef, the Great Barrier Reef is home to around 400 species of corals. The reef is now under threat because of the overpopulation of a specific species of starfish called crown-of-thorns starfish(COTS), which are destroying many of the native corals.
 
 Our task is to identify locations (bounding box) of COTS from underwater images of the Great Barrier Reef, aiming to improve the efficiency and scale at which reef managers detect and control COTS outbreaks. This will help measures being taken to bring down the levels of COTS to a more ecologically sustainable level.
 
